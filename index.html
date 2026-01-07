@@ -156,35 +156,6 @@
                 </a>
             </div>
         </div>
-        <!-- Image Preview Uploader Component -->
-<div class="uploader-container">
-    <label class="uploader-label">Upload Profile Picture</label>
-    
-    <div class="drop-zone" id="dropZone">
-        <div class="drop-zone-content" id="dropZoneContent">
-            <i class="fas fa-cloud-upload-alt upload-icon"></i>
-            <p>Drag & drop image here or <span>Browse</span></p>
-            <p class="file-info">Supports: JPG, PNG, WEBP (Max: 2MB)</p>
-        </div>
-        
-        <div class="preview-container" id="previewContainer">
-            <img src="" alt="Preview" id="imagePreview">
-            <div class="preview-overlay">
-                <button type="button" class="replace-btn" id="replaceBtn">
-                    <i class="fas fa-sync"></i> Replace
-                </button>
-            </div>
-        </div>
-        <input type="file" id="fileInput" accept="image/jpeg, image/png, image/webp" hidden>
-    </div>
-
-    <div class="uploader-footer">
-        <button type="button" id="removeBtn" class="remove-btn" disabled>
-            <i class="fas fa-trash"></i> Remove Image
-        </button>
-        <div id="errorMsg" class="error-msg"></div>
-    </div>
-</div>
 
         <!-- 👇 CONTRIBUTORS: START COPYING FROM HERE 👇 -->
         <!-- This is the TEMPLATE card - copy this entire block and paste it below -->
@@ -516,7 +487,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="card">
             <img src="images/Harshit.jpg" alt="User Photo" class="card-img">
             <h2>Harshit Singh</h2>
@@ -532,7 +503,7 @@
             <p>"Hello world! This is my first PR."</p>
             <a href="https://github.com/Samina2005" class="card-btn" target="_blank">GitHub</a>
         </div>
-      
+
         <div class="card">
             <img src="images/user.png" alt="Ram Charan Photo" class="card-img">
             <h2>Ram Charan</h2>
@@ -560,16 +531,16 @@
 
     <!-- FOOTER START -->
     <footer class="footer">
-      <div class="footer-social">
-      <p>Connect with us</p>
-      <div class="social-links">
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-      </div>
+        <div class="footer-social">
+            <p>Connect with us</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
         <p>© 2026 Community Hall of Fame</p>
         <p>
             Built with ❤️ by the Open Source Community ·
@@ -917,6 +888,32 @@
 
 
     <script src="tilt.js"></script>
+
+    <!-- Welcome Message Container -->
+    <div id="welcomeMessage" class="welcome-message">
+        🎉 Welcome to the Community Card Showcase!
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const welcomeMsg = document.getElementById("welcomeMessage");
+            if (welcomeMsg) {
+                // Show message
+                setTimeout(() => {
+                    welcomeMsg.classList.add("show");
+                }, 500); // Small delay after load
+
+                // Hide message after 4 seconds
+                setTimeout(() => {
+                    welcomeMsg.classList.remove("show");
+                    // Optional: remove from DOM after transition
+                    setTimeout(() => {
+                        welcomeMsg.style.display = 'none';
+                    }, 500);
+                }, 4500);
+            }
+        });
+    </script>
 </body>
 
 </html>
