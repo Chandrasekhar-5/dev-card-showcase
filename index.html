@@ -1097,29 +1097,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </script>
 
     <script>
-        /* ---------- THEME TOGGLE SCRIPT ---------- */
-        const toggleBtn = document.getElementById("themeToggle");
-        const body = document.body;
-
-        // Load saved theme
-        if (localStorage.getItem("theme") === "light") {
-            body.classList.add("light-mode");
-            toggleBtn.textContent = "🌞";
-        }
-
-        toggleBtn.addEventListener("click", () => {
-            body.classList.toggle("light-mode");
-
-            if (body.classList.contains("light-mode")) {
-                toggleBtn.textContent = "🌞";
-                localStorage.setItem("theme", "light");
-            } else {
-                toggleBtn.textContent = "🌙";
-                localStorage.setItem("theme", "dark");
-            }
-        });
-    </script>
-    <script>
         function animateValue(element, start, end, duration) {
             let startTimestamp = null;
 
@@ -1199,6 +1176,35 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, 500);
                 }, 4500);
             }
+        });
+    </script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+
+            // Function to set theme
+            function setTheme(theme) {
+                body.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+            }
+
+            // Function to toggle theme
+            function toggleTheme() {
+                const currentTheme = body.getAttribute('data-theme') || 'dark';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            }
+
+            // Load saved theme or default to dark
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            setTheme(savedTheme);
+
+            // Add event listener to theme toggle button
+            themeToggle.addEventListener('click', toggleTheme);
         });
     </script>
 </body>
