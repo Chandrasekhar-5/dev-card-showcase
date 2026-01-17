@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="Hall of Fame (1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         /* Additional styles for analytics page */
         .analytics-header {
@@ -29,6 +30,255 @@
             color: var(--text-light);
             max-width: 800px;
             margin: 0 auto 2rem;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .export-btn, .refresh-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .export-btn:hover, .refresh-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .export-btn.loading, .refresh-btn.loading {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            background: var(--card-bg);
+            margin: 5% auto;
+            padding: 0;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: var(--shadow);
+            animation: modalSlideIn 0.3s ease-out;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .modal-header {
+            padding: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .modal-close {
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: color 0.3s ease;
+        }
+        
+        .modal-close:hover {
+            color: var(--primary-color);
+        }
+        
+        .modal-body {
+            padding: 2rem;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        .export-options {
+            margin-bottom: 2rem;
+        }
+        
+        .export-section {
+            margin-bottom: 2rem;
+        }
+        
+        .export-section h4 {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+        
+        .format-options {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .format-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background: var(--bg-color);
+        }
+        
+        .format-option:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .format-option input[type="radio"] {
+            display: none;
+        }
+        
+        .format-option input[type="radio"]:checked + .format-label {
+            color: var(--primary-color);
+        }
+        
+        .format-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .filter-group input {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            width: 80px;
+        }
+        
+        .export-preview {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+        
+        .export-preview h4 {
+            margin-bottom: 1rem;
+        }
+        
+        .preview-content {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1rem;
+            font-family: monospace;
+            font-size: 0.9rem;
+            max-height: 200px;
+            overflow-y: auto;
+            color: var(--text-color);
+        }
+        
+        .modal-footer {
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--border-color);
         }
         
         /* Stats Grid */
@@ -70,6 +320,7 @@
             margin-bottom: 0.5rem;
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
@@ -656,9 +907,14 @@
             <button class="time-filter-btn" data-period="day">Today</button>
         </div>
         
-        <button id="refreshBtn" class="refresh-btn">
-            <i class="fas fa-sync-alt"></i> Refresh Analytics
-        </button>
+        <div class="header-actions">
+            <button id="exportBtn" class="export-btn">
+                <i class="fas fa-download"></i> Export Data
+            </button>
+            <button id="refreshBtn" class="refresh-btn">
+                <i class="fas fa-sync-alt"></i> Refresh Analytics
+            </button>
+        </div>
         
         <div class="update-time" id="lastUpdated">
             Last updated: Loading...
@@ -826,6 +1082,73 @@
         </p>
     </footer>
 
+    <!-- EXPORT MODAL -->
+    <div id="exportModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-download"></i> Export Contributor Data</h3>
+                <span class="modal-close" id="exportModalClose">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="export-options">
+                    <div class="export-section">
+                        <h4>Export Format</h4>
+                        <div class="format-options">
+                            <label class="format-option">
+                                <input type="radio" name="exportFormat" value="json" checked>
+                                <span class="format-label">
+                                    <i class="fas fa-code"></i>
+                                    JSON
+                                </span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="exportFormat" value="csv">
+                                <span class="format-label">
+                                    <i class="fas fa-table"></i>
+                                    CSV
+                                </span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="exportFormat" value="pdf">
+                                <span class="format-label">
+                                    <i class="fas fa-file-pdf"></i>
+                                    PDF
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="export-section">
+                        <h4>Filter Options</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" id="filterRole" checked>
+                                <span>Include all contributors</span>
+                            </label>
+                            <div class="filter-group">
+                                <label for="minContributions">Minimum contributions:</label>
+                                <input type="number" id="minContributions" min="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="export-preview">
+                    <h4>Data Preview</h4>
+                    <div id="exportPreview" class="preview-content">
+                        Loading preview...
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="exportCancel" class="btn-secondary">Cancel</button>
+                <button id="exportConfirm" class="btn-primary">
+                    <i class="fas fa-download"></i> Export Data
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- SCRIPTS -->
     <script>
         // Configuration
@@ -852,6 +1175,14 @@
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        // Export Modal Elements
+        const exportBtn = document.getElementById('exportBtn');
+        const exportModal = document.getElementById('exportModal');
+        const exportModalClose = document.getElementById('exportModalClose');
+        const exportCancel = document.getElementById('exportCancel');
+        const exportConfirm = document.getElementById('exportConfirm');
+        const exportPreview = document.getElementById('exportPreview');
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
@@ -1425,6 +1756,153 @@
             return Math.floor(seconds) + ' seconds ago';
         }
 
+        // Export Modal Functions
+        function openExportModal() {
+            exportModal.style.display = 'block';
+            updateExportPreview();
+        }
+        
+        function closeExportModal() {
+            exportModal.style.display = 'none';
+        }
+        
+        function updateExportPreview() {
+            if (!contributorsData.length) {
+                exportPreview.textContent = 'No data available';
+                return;
+            }
+            
+            const format = document.querySelector('input[name="exportFormat"]:checked').value;
+            const minContributions = parseInt(document.getElementById('minContributions').value) || 1;
+            
+            // Filter data
+            const filteredData = contributorsData.filter(c => c.contributions >= minContributions);
+            
+            // Prepare sample data
+            const sampleData = filteredData.slice(0, 3).map(c => ({
+                name: c.login,
+                role: 'Contributor',
+                githubUrl: c.html_url,
+                contributions: c.contributions
+            }));
+            
+            if (format === 'json') {
+                exportPreview.textContent = JSON.stringify(sampleData, null, 2);
+            } else if (format === 'csv') {
+                const headers = ['Name', 'Role', 'GitHub URL', 'Contributions'];
+                const rows = sampleData.map(item => [item.name, item.role, item.githubUrl, item.contributions]);
+                const csv = [headers, ...rows].map(row => row.map(cell => `"${cell}"`).join(',')).join('\n');
+                exportPreview.textContent = csv;
+            } else if (format === 'pdf') {
+                exportPreview.textContent = 'PDF preview not available. Will include contributor table with formatted data.';
+            }
+        }
+        
+        function handleExport() {
+            if (!contributorsData.length) {
+                alert('No data available to export');
+                return;
+            }
+            
+            const format = document.querySelector('input[name="exportFormat"]:checked').value;
+            const minContributions = parseInt(document.getElementById('minContributions').value) || 1;
+            
+            // Filter data
+            const filteredData = contributorsData.filter(c => c.contributions >= minContributions);
+            
+            // Prepare export data
+            const exportData = filteredData.map(c => ({
+                name: c.login,
+                role: 'Contributor',
+                githubUrl: c.html_url,
+                contributions: c.contributions,
+                avatarUrl: c.avatar_url
+            }));
+            
+            const timestamp = new Date().toISOString().split('T')[0];
+            const filename = `contributors-${timestamp}`;
+            
+            if (format === 'json') {
+                exportJSON(exportData, filename);
+            } else if (format === 'csv') {
+                exportCSV(exportData, filename);
+            } else if (format === 'pdf') {
+                exportPDF(exportData, filename);
+            }
+            
+            closeExportModal();
+        }
+        
+        function exportJSON(data, filename) {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            downloadBlob(blob, `${filename}.json`);
+        }
+        
+        function exportCSV(data, filename) {
+            const headers = ['Name', 'Role', 'GitHub URL', 'Contributions', 'Avatar URL'];
+            const rows = data.map(item => [
+                item.name,
+                item.role,
+                item.githubUrl,
+                item.contributions,
+                item.avatarUrl
+            ]);
+            
+            const csvContent = [headers, ...rows]
+                .map(row => row.map(cell => `"${cell}"`).join(','))
+                .join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            downloadBlob(blob, `${filename}.csv`);
+        }
+        
+        function exportPDF(data, filename) {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Title
+            doc.setFontSize(20);
+            doc.text('Contributor Report', 20, 30);
+            
+            // Date
+            doc.setFontSize(12);
+            doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 20, 45);
+            
+            // Table headers
+            doc.setFontSize(14);
+            doc.text('Contributors:', 20, 65);
+            
+            let y = 80;
+            doc.setFontSize(10);
+            
+            data.forEach((contributor, index) => {
+                if (y > 270) { // New page if needed
+                    doc.addPage();
+                    y = 30;
+                }
+                
+                doc.text(`${index + 1}. ${contributor.name}`, 20, y);
+                doc.text(`Role: ${contributor.role}`, 20, y + 5);
+                doc.text(`Contributions: ${contributor.contributions}`, 20, y + 10);
+                doc.text(`GitHub: ${contributor.githubUrl}`, 20, y + 15);
+                
+                y += 25;
+            });
+            
+            doc.save(`${filename}.pdf`);
+        }
+        
+        function downloadBlob(blob, filename) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
         // Load All Data
         async function loadAllData() {
             try {
@@ -1478,6 +1956,26 @@
 
         // Refresh button event
         refreshBtn.addEventListener('click', loadAllData);
+        
+        // Export Modal Events
+        exportBtn.addEventListener('click', openExportModal);
+        exportModalClose.addEventListener('click', closeExportModal);
+        exportCancel.addEventListener('click', closeExportModal);
+        exportConfirm.addEventListener('click', handleExport);
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === exportModal) {
+                closeExportModal();
+            }
+        });
+        
+        // Update preview when filters change
+        document.querySelectorAll('input[name="exportFormat"]').forEach(radio => {
+            radio.addEventListener('change', updateExportPreview);
+        });
+        document.getElementById('filterRole').addEventListener('change', updateExportPreview);
+        document.getElementById('minContributions').addEventListener('input', updateExportPreview);
     </script>
 </body>
 </html>
