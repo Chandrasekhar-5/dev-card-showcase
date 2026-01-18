@@ -1536,6 +1536,26 @@
     "name": "Sneha Amballa",
     "github": "https://github.com/your-github-username"
   }
+},
+
+{
+  "title": "Decision Consequences Simulator ⚖️",
+  "description": "An interactive system showing consequences of user decisions across real-life scenarios.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Decision Making",
+    "Education",
+    "Interactive Learning"
+  ],
+  "links": {
+    "live": "./projects/decision-consequences-simulator/index.html"
+  },
+  "author": {
+    "name": "Sneha Amballa",
+    "github": "https://github.com/your-github-username"
+  }
 }
 
 
