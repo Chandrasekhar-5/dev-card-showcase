@@ -3975,6 +3975,8 @@
   }
 },
 {
+    "title": "Top-Down Retro Racing Game",
+    "description": "A top-down arcade-style racing game where players control a car, avoid obstacles, and survive as long as possible using continuous animation and increasing difficulty mechanics.",
     "title": "Simplified Tetris Game",
     "description": "A simplified Tetris-style puzzle game featuring falling blocks, rotation mechanics, row-clearing logic, and game over detection built using HTML Canvas.",
     "title": "Two-Player Neon Pong",
@@ -3990,6 +3992,7 @@
         "Canvas",
         "Game",
         "Retro",
+        "Racing"
         "Puzzle"
         "Multiplayer"
     ],
