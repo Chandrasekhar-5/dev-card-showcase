@@ -4596,7 +4596,7 @@
     },
     "author": {
         "name": "PavanKarthik",
-        "github": "https://github.com/pavanakarthik12"
+        "github": "https://github.com/pavanakarthik12",
     "title": "guitarjs",
     "description": "A JavaScript library for creating guitar tablatures. It provides a simple and intuitive way to define and work with guitar tablatures in your JavaScript applications.",
     "tags": [
@@ -4606,6 +4606,22 @@
     ],
     "links":{
         "live":"./projects/guitarjs/index.html"
+    },
+    "author":{
+        "name":"PavanKarthik",
+        "github":"https://github.com/pavanakarthik12"
+    }
+},
+{
+    "title": "trafficjs",
+    "description": "A JavaScript library for creating traffic animations. It provides a simple and intuitive way to define and work with traffic animations in your JavaScript applications.",
+    "tags": [
+        "JavaScript",
+        "Traffic Animation",
+        "Library"
+    ],
+    "links":{
+        "live":"./projects/trafficjs/index.html"
     },
     "author":{
         "name":"PavanKarthik",
