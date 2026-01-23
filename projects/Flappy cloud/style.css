@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #b2ebf2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  position: relative;
+  width: 360px;
+  height: 520px;
+  background: linear-gradient(to bottom, #87ceeb, #dff6ff);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Bird */
+.bird {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(135deg, #ffd166, #ffb703);
+  border-radius: 50%;
+  left: 70px;
+  top: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Pipes */
+.pipe {
+  position: absolute;
+  width: 60px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  border-radius: 0 0 12px 12px;
+}
+
+.pipe.top {
+  top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+.pipe.bottom {
+  bottom: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Score */
+.score {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+/* Start Message */
+.message {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  opacity: 0.9;
+}
