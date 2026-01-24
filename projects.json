@@ -16,6 +16,23 @@
             "github": "https://github.com/omkarhole"
         }
     },
+     {
+        "title": "Fading snake game",
+        "description": "Simple Fading snake game.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/fading-snake/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Advanced Text Case Converter",
         "description": "A powerful text utility that converts text into multiple cases including uppercase, lowercase, sentence case, title case, and toggle case with live preview, undo history, and keyboard shortcuts.",
