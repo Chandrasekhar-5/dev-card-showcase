@@ -740,6 +740,25 @@
         }
     },
     {
+        "title": "Pixel Art Drawing Tool",
+        "description": "A pixel art editor where users can draw and export pixel designs. Features a grid-based canvas, color palette selection, and export functionality as image.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Art",
+            "Drawing",
+            "Pixel Art"
+        ],
+        "links": {
+            "live": "./projects/pixel-art-drawing-tool/index.html"
+        },
+        "author": {
+            "name": "Sneha-Amballa",
+            "github": "https://github.com/Sneha-Amballa"
+        }
+    },
+    {
         "title": "ASCII Art Creator",
         "description": "A web application that converts images into ASCII art representations. Users can upload images, customize character sets, and adjust output dimensions for unique text-based art creations.",
         "tags": [
@@ -1208,6 +1227,25 @@
         }
     },
     {
+        "title": "Retro Racing (Top-Down)",
+        "description": "A top-down retro racing game where players avoid obstacles and survive as long as possible. Features vertical scrolling road, player-controlled car, random obstacle spawning, and score based on survival time.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Game",
+            "Arcade",
+            "Racing"
+        ],
+        "links": {
+            "live": "./projects/retro-racing/index.html"
+        },
+        "author": {
+            "name": "Sneha-Amballa",
+            "github": "https://github.com/Sneha-Amballa"
+        }
+    },
+    {
         "title": "Word Memory Game",
         "description": "Word Memory Game is an engaging web application that challenges players to memorize and recall words within a time limit. It enhances vocabulary and memory skills through multiple levels of difficulty and interactive gameplay.",
         "tags": [
@@ -1288,6 +1326,22 @@
         }
     },
     {
+        "title": "Breathing Meditation App",
+        "description": "A calming web application that guides users through breathing exercises with visual animations and soothing sounds to promote relaxation and mindfulness.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/BreathingMeditation/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
         "title": "Colorful Quiz Challenge",
         "description": "A bright, engaging quiz website with cheerful pastel shades and random questions on various fun topics. Features score tracking, hints, and celebration animations.",
         "tags": [
@@ -1301,6 +1355,38 @@
         "author": {
             "name": "Armaan",
             "github": "https://github.com/iarmaanx"
+        }
+    },
+    {
+        "title": "Balance Game",
+        "description": "A fun and challenging game where players balance objects on a beam to achieve equilibrium.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/BalanceGame/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
+        "title": "Self Destructing Notes",
+        "description": "A note-taking app where notes automatically delete after a set time, encouraging users to be more mindful of their digital footprint.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Self-DestructingNotes/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
     {
@@ -1321,6 +1407,22 @@
         }
     },
     {
+        "title": "Shy UI",
+        "description": "A minimalist user interface that reveals additional options and information only when interacted with, providing a clean and distraction-free experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/ShyUI/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
+        }
+    },
+    {
         "title": "Carbon Footprint Calculator",
         "description": "A web application that helps users estimate their carbon footprint based on lifestyle choices such as transportation, energy consumption, and diet. Provides tips for reducing environmental impact.",
         "tags": [
@@ -1336,7 +1438,7 @@
             "github": "https://github.com/neeru24"
         }
     },
-        {
+    {
         "title": "AI Prompt Generator",
         "description": "A tool that generates AI prompts based on user input and preferences.",
         "tags": [
@@ -1382,6 +1484,22 @@
         "author": {
             "name": "Omkar",
             "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+        "title": "Virtual Pet Care",
+        "description": "A virtual pet care simulator where users can feed, play with, and clean their virtual pet.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/VirtualPetCare/index.html"
+        },
+        "author": {
+            "name": "Neeru",
+            "github": "https://github.com/neeru24"
         }
     },
             {
@@ -1561,6 +1679,22 @@
             "github": "https://github.com/omkarhole"
         }
     },
+      {
+        "title": "Simple Dashboard",
+        "description": "A clean and modern dashboard template featuring responsive design, customizable widgets, and data visualization components for effective information display.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Simple-dashboard/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Lottery Game",
         "description": "A simple lottery game where players select numbers and check if they match randomly drawn winning numbers. Features instant feedback and a fun user interface.",
@@ -1609,7 +1743,23 @@
             "github": "https://github.com/omkarhole"
         }
     },
-        {
+      {
+        "title": "ChromaLab Pro",
+        "description": "An advanced color palette generator that allows users to create, customize, and export color schemes for design projects. Features include color harmonies, gradient creation, and real-time preview.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/ChromaLabPro/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+   {
         "title": "scorechad game",
         "description": "A competitive typing game where players race against an AI opponent to type words accurately and quickly. Features multiple difficulty levels and real-time score tracking.",
         "tags": [
@@ -1705,6 +1855,18 @@
             "github": "https://github.com/CodeMaster11000"
         }
     },
+       {
+    "title": "Window Size Tester",
+    "description": "A simple web tool that displays the current browser window dimensions in real-time, updating as the window is resized. Useful for developers and designers to test responsive layouts.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "links": {
+      "live": "./projects/current-window/index.html"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
+  },
     {
         "title": "IRIDUM Game",
         "description": "An engaging web-based game where players control a character to navigate through obstacles and collect iridium crystals. Features smooth animations, scoring system, and increasing difficulty levels for an exciting gaming experience.",
