@@ -1806,6 +1806,22 @@
             "github": "https://github.com/omkarhole"
         }
     },
+      {
+        "title": "Tower Of Hanoi",
+        "description": "A classic Tower of Hanoi puzzle game where players move disks between pegs following specific rules to achieve the goal state. Features visual representation and move counter.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/tower-of-hanoi/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Image Compressor",
         "description": "A tool that compresses images to reduce file size while maintaining quality. Features adjustable compression levels and preview of original and compressed images.",
