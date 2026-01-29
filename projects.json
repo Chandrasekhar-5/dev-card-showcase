@@ -1758,6 +1758,22 @@
             "github": "https://github.com/neeru24"
         }
     },
+      {
+        "title": "Budget Planner",
+        "description": "A user-friendly budget planning tool that helps users track income and expenses, set financial goals, and visualize spending patterns with charts and graphs.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Budget-Planner/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Hangman Game",
         "description": "A classic Hangman game where players guess letters to reveal a hidden word before running out of attempts. Features multiple categories, hints, and a scoring system.",
