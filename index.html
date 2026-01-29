@@ -6,14 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Card Showcase</title>
+ accessibility-improvements
+    <link rel="stylesheet" href="css/projects.css">
+=======
     <link rel="stylesheet" href="style.css"> 
+ main
     <link rel="icon" type="image/png" href="Hall of Fame (1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
 </head>
 
-<body>
+<body data-theme="dark">
+
 
     <div class="circle-container">
         <div class="circle"></div>
@@ -70,6 +75,7 @@
             <li><a href="contribute.html">Contribute</a></li>
             <li><a href="https://github.com/Jayanta2004/dev-card-showcase" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
             <li><a href="statistics.html">Statistics</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -82,6 +88,10 @@
             <i class="fas fa-sync-alt"></i>
             <span>Sync</span>
         </button>
+            <li><a href="feature-request.html">Feature Request</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
         <button id="themeToggle" class="theme-toggle">🌙</button>
     </nav>
 
@@ -117,7 +127,7 @@
     </div>
 
     <!-- Container that holds all the profile cards -->
-    <div class="card-container">
+    <main class="card-container">
 
         <!-- ADMIN CARD - Don't modify this card -->
         <div class="card">
@@ -159,7 +169,7 @@
                 <a href="http://github.com/ChiragTankan/" class="card-btn" target="_blank">View Profile</a>
             </div>
         </div>
-        
+
         <div class="card">
             <div class="card-inner">
                 <img src="images/mohit-yadav.jpg" alt="Mohit Yadav's Photo" class="card-img">
@@ -924,6 +934,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="card yash-custom-style">
             <div class="card-inner">
                 <img src="images/yash-sarkar.jpg" alt="Yash Sarkar Photo" class="card-img">
@@ -936,9 +947,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <img src="images/Anshika4000.jpg" alt="User Photo" class="card-img">
+                <h2>Anshika Kumari</h2>
+                <span class="role">Contributor</span>
+                <p>"This is my first Pull Request. I am here to contribute."</p>
+                <a href="https://github.com/Anshika4000/" class="card-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+
         <!-- ADD YOUR NEW CARD ABOVE THIS COMMENT -->
 
-    </div> <!-- End of card-container -->
+    </main> <!-- End of card-container -->
 
     
   <div id="footer"></div>
