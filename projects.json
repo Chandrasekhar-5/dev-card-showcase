@@ -6815,6 +6815,18 @@
       "name": "Gupta-02",
       "github": "https://github.com/Gupta-02"
     }
+  },
+  {
+    "title": "Quantum Maze",
+    "description": "Navigate a maze that shifts when observed. Features perspective-based 3D logic where camera angle changes the maze layout.",
+    "tags": ["HTML", "CSS", "JavaScript", "Three.js", "Game", "3D", "Puzzle", "Logic"],
+    "links": {
+      "live": "./projects/Quantum-Maze/"
+    },
+    "author": {
+      "name": "Gupta-02",
+      "github": "https://github.com/Gupta-02"
+    }
   }
 ]
 
