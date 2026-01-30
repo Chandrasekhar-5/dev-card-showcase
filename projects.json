@@ -2848,6 +2848,22 @@
             "github": "https://github.com/Gupta-02"
         }
     },
+     {
+        "title": "Cogntive load visulizer",
+        "description": "A web application that generates random gradient patterns for backgrounds, allowing users to copy the CSS code for use in their own projects.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/cognitive-load-visualizer/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkar"
+        }
+    },
     {
         "title": "Gradent Pattern",
         "description": "A web application that generates random gradient patterns for backgrounds, allowing users to copy the CSS code for use in their own projects.",
