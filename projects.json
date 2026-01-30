@@ -872,6 +872,22 @@
         }
     },
     {
+        "title": "Geography Capital Matcher",
+        "description": "An interactive geography game where players match countries with their capitals. Features multiple levels, score tracking, and a visually appealing interface.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/geography-capital-matcher/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
         "title": "Physics Sandbox",
         "description": "A physics simulation sandbox with interactive controls and visualizations.",
         "tags": [
