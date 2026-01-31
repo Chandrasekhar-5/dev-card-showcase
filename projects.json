@@ -7604,26 +7604,18 @@
     }
   },
   {
-    "title": "Stress Level Tracker 🧠",
-    "description": "A comprehensive mental health monitoring interface for tracking stress levels over time. Features stress scale input (1-10), mood tracking, trigger identification, interactive trend graphs using Chart.js, mood distribution analysis, personalized coping strategies, and AI-powered insights for stress management and mental health awareness.",
+    "title": "Focus Time Tracker",
+    "description": "An advanced focus and productivity tracking UI with timers, productivity graphs, and helpful tips to improve deep work awareness.",
     "tags": [
       "HTML",
       "CSS",
       "JavaScript",
-      "Chart.js",
-      "Mental Health",
-      "Stress Tracking",
-      "Mood Monitoring",
-      "Data Visualization",
-      "Local Storage",
-      "Responsive",
-      "Wellness",
-      "Health Analytics",
-      "Coping Strategies",
-      "Mental Health Awareness"
+      "Productivity",
+      "Timer",
+      "Charts"
     ],
     "links": {
-      "live": "./projects/Stress-Level-Tracker/"
+      "live": "./projects/Focus-Time-Tracker/"
     },
     "author": {
       "name": "Gupta",
