@@ -109,6 +109,23 @@
             "github": "https://github.com/omkarhole"
         }
     },
+      {
+        "title": "Code Snippet",
+        "description": "A utility tool to format and minify HTML code with live preview. Features include beautifying HTML, minifying HTML, copying formatted code, downloading as a file, and a dark mode toggle for comfortable use.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/code-snippet/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Breathing Circle",
         "description": "A minimalist breathing exercise tool designed to promote calm and focus. Features a smooth inhale–hold–exhale animation cycle, soft wellness-inspired visuals, and a fully responsive layout for a distraction-free experience across devices.",
