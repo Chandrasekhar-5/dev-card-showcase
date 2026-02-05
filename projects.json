@@ -1,5 +1,24 @@
 [
     {
+    "title": "Memory Budgeting",
+    "description": "An intermediate-level budgeting application that helps users track income and expenses with a smart, memory-driven approach. Features a horizontal dashboard layout, income/expense toggles, real-time balance updates, and behavioral spending insights presented through a polished, modern UI inspired by high-end control systems.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX",
+        "Finance",
+        "Gamification"
+    ],
+    "links": {
+        "live": "./projects/memory-budget/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+    {
         "title": "Daily Fun Fact Challenge",
         "description": "A gamified daily fun fact application where users guess whether a fact is true or false across multiple difficulty levels. Features a point-based reward system, winner status progression, and a responsive, visually engaging interface for learning through play.",
         "tags": [
@@ -18,6 +37,78 @@
         }
     },
     {
+    "title": "OTP Flow Simulator",
+    "description": "An interactive, game-inspired OTP authentication simulator designed to demonstrate secure verification flows with enhanced user engagement. Features real-time OTP generation, countdown timers, progressive difficulty, score and lives system, and a modern dark UI with smooth animations—making the security concept both educational and engaging.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX",
+        "Security",
+        "Gamification"
+    ],
+    "links": {
+        "live": "./projects/otp-flow/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+    {
+        "title": "ULTRA-INTELLIGENCE v9.4",
+        "description": "An AI that answers your questions differently.",
+        "tags": [ 
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Gamification",
+            "Learning"
+        ],
+        "links": {
+            "live": "./projects/NEURO-GEN v9.4/"
+        },
+        "author": {
+            "name": "Sai Sathvik",
+            "github": "https://github.com/Saisathvik94"
+        }
+    },
+    {
+    "title": "Queue Management Simulator Game",
+    "description": "A gamified queue management game where users add, serve, and remove people from a virtual queue. Features random events like VIP arrivals, unexpected departures, a points and level-up system, and a visually engaging neon-style interface with interactive animations for a fun arcade-like experience.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gamification",
+        "Interactive Game"
+    ],
+    "links": {
+        "live": "./projects/queue-management/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+     {
+        "title": "Code Formattor pro",
+        "description": "A utility tool to format and minify HTML code with live preview. Features include beautifying HTML, minifying HTML, copying formatted code, downloading as a file, and a dark mode toggle for comfortable use.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/React-formattor/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
     "title": "DiffCraft – Text Diff Checker",
     "description": "A modern text difference checker that compares two texts in real time and highlights added, removed, and modified lines. Includes similarity percentage, ignore case and whitespace options, dark mode, and a clean editor-style UI for an efficient comparison experience.",
     "tags": [
@@ -29,6 +120,24 @@
     ],
     "links": {
         "live": "./projects/text-difference-check/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+{
+    "title": "Elevator Control Simulator Game",
+    "description": "A polished gamified elevator control game where users operate a multi-floor elevator in a neon black & blue building. Features include calling the elevator from any floor, animated doors, queue management, direction indicators, emergency stop, and interactive responsive controls. Designed for an arcade-style immersive experience.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gamification",
+        "Interactive Game"
+    ],
+    "links": {
+        "live": "./projects/elevator-control/"
     },
     "author": {
         "name": "Anvesha",
@@ -53,6 +162,25 @@
         }
     },
     {
+    "title": "Traffic Signal Optimization Simulator",
+    "description": "An animated, real-time traffic signal simulation that demonstrates adaptive signal control based on traffic density. Features moving vehicle animations, dynamic green-light allocation, congestion-aware timing optimization, and a modern dark-themed dashboard—illustrating smart city concepts through an interactive and visually engaging system.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX",
+        "Simulation",
+        "Smart City"
+    ],
+    "links": {
+        "live": "./projects/traffic-signal-optimisation/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+    {
         "title": "Keyboard Drum Kit",
         "description": "An interactive drum machine where keyboard keys trigger realistic drum sounds using the Web Audio API. Press Q, W, E, R, A, S, D, F keys to play different drum samples including kick, snare, hi-hat, tom, clap, cymbal, percussion, and bass. Features smooth animations, visual feedback, and encourages playful exploration of keyboard input.",
         "tags": [
@@ -73,6 +201,75 @@
         "author": {
             "name": "Gupta",
             "github": "https://github.com/Gupta-02"
+        }
+    },
+    {
+    "title": "Fitness Stats Tracker",
+    "description": "A fully fledged fitness tracking dashboard that allows users to log daily activity metrics and monitor overall progress over time. Features a modern dark-themed UI, persistent local storage, real-time calorie calculations, and a responsive left–right dashboard layout that presents summaries and historical data in a clean, intuitive manner.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX",
+        "Dashboard",
+        "Health"
+    ],
+    "links": {
+        "live": "./projects/fitness-stats-tracker/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+        {
+        "title": "Toast notification playground",
+        "description": "A web application that demonstrates various styles and types of toast notifications. Users can trigger different notifications to see how they appear and behave.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/Toast-Notification-Playground/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+     {
+        "title": "Tilted Words",
+        "description": "Tilted words .",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/tilted-words/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+      {
+        "title": "Code Snippet",
+        "description": "A utility tool to format and minify HTML code with live preview. Features include beautifying HTML, minifying HTML, copying formatted code, downloading as a file, and a dark mode toggle for comfortable use.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/code-snippet/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
         }
     },
     {
@@ -189,6 +386,24 @@
             "github": "https://github.com/omkarhole"
         }
     },
+    {
+    "title": "Task Sprint",
+    "description": "A responsive and visually polished task management application built with a dark blue theme. Users can add, edit, delete, and complete tasks with priority tagging, real-time statistics, and smooth interactions—designed to boost productivity through a clean, modern interface.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Productivity",
+        "Responsive Design"
+    ],
+    "links": {
+        "live": "./projects/task-sprint/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
     
        {
         "title": "Personal Portfolio Builder",
@@ -224,6 +439,43 @@
     "name": "Anvesha",
     "github": "https://github.com/your-github-username"
   }
+},
+  {
+        "title": "CSS CheatSheet",
+        "description": "A comprehensive cheat sheet for CSS properties, selectors, and best practices. Designed to help developers quickly reference and learn CSS concepts with clear examples and explanations.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Utility Tool"
+        ],
+        "links": {
+            "live": "./projects/css-cheatsheet/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+    "title": "Budget Survival Game",
+    "description": "A real-life financial survival simulator that challenges players to manage cash flow, savings, and health under unpredictable daily expenses. Features dynamic income generation, user-defined earnings, emergency handling through savings, and a modern dark cyber-themed UI—transforming budgeting concepts into an engaging game-like experience.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Game Design",
+        "Simulation",
+        "Finance",
+        "UI/UX"
+    ],
+    "links": {
+        "live": "./projects/budget-survival-game/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
 },
     {
         "title": "Parkour Grid",
@@ -346,6 +598,41 @@
         ],
         "links": {
             "live": "./projects/Calmroute/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+    {
+    "title": "Mood Match",
+    "description": "A colorful and emotionally intelligent mood-matching application that lets users select how they feel and receive thoughtful responses with activity suggestions. Designed with a playful yet mature UI, smooth animations, and vibrant gradients to enhance user engagement and self-awareness.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gamification",
+        "UI/UX",
+        "Mental Wellness"
+    ],
+    "links": {
+        "live": "./projects/mood-match/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
+        {
+        "title": "CSS Hover Transform",
+        "description": "A web application that showcases various CSS hover transform effects. Users can hover over different elements to see the transform animations in action.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/css-hover-transform/index.html"
         },
         "author": {
             "name": "Omkar",
@@ -1197,6 +1484,25 @@
             "github": "https://github.com/neeru24"
         }
     },
+    {
+    "title": "Sleep Routine Builder",
+    "description": "A calm, dark-themed wellness application that helps users build healthy sleep habits by setting consistent sleep and wake times and creating personalized night routines. Features a minimal, sleep-friendly UI, local data persistence, and gentle behavioral insights—designed to feel like a real mindfulness and sleep companion app.",
+    "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Wellness",
+        "UI/UX",
+        "Productivity"
+    ],
+    "links": {
+        "live": "./projects/sleep-routine-builder/"
+    },
+    "author": {
+        "name": "Anvesha",
+        "github": "https://github.com/your-github-username"
+    }
+},
      {
         "title": "Roadmap",
         "description": "An interactive roadmap guiding users through the essential skills and technologies needed to become a proficient full stack developer. Features multiple tracks, checkpoints, and tooltips for detailed learning paths.",
@@ -1689,6 +1995,22 @@
         ],
         "links": {
             "live": "./projects/git-visualizer/index.html"
+        },
+        "author": {
+            "name": "CodeMaster",
+            "github": "https://github.com/CodeMaster"
+        }
+    },
+    {
+        "title": "Finance Manager",
+        "description": "A personal finance management tool that helps users track their income, expenses, and savings goals with visual charts and reports.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/finance-mgr-ai/index.html"
         },
         "author": {
             "name": "CodeMaster",
@@ -2857,6 +3179,120 @@
             "github": "https://github.com/your-github-username"
         }
     },
+     {
+        "title": "Arcide Game",
+        "description": "An exciting arcade-style game where players navigate a character through various levels filled with obstacles and enemies. Features smooth animations, power-ups, and score tracking for an engaging gaming experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/arcide/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+     {
+        "title": "Brick Breaker Game",
+        "description": "A classic brick breaker game where players control a paddle to bounce a ball and break bricks. Features multiple levels, power-ups, and score tracking for an engaging gaming experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/brickbreaker/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+      {
+        "title": "Castle Breach Simulator",
+        "description": "An engaging web-based game where players control a character to navigate through obstacles and collect iridium crystals. Features smooth animations, scoring system, and increasing difficulty levels for an exciting gaming experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/castle-breach-simulator/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+      {
+        "title": "Desert Rally Mini",
+        "description": "An exciting desert rally racing game featuring realistic driving mechanics, multiple laps, and a night mode toggle. Players can use arrow keys or WASD to drive, space to brake, and shift to boost. Complete laps by hitting checkpoints!",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Canvas API"
+        ],
+        "links": {
+            "live": "./projects/desert-rally/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+    
+      {
+        "title": "Gravity Skater",
+        "description": "A thrilling skateboarding game set in a low-gravity environment. Players can perform tricks, navigate obstacles",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/gravity/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+       {
+        "title": "orbit cannon",
+        "description": "A space-themed shooting game where players control a cannon to shoot down incoming asteroids while managing limited ammunition and avoiding collisions.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/orbit/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
+           {
+        "title": "space junk cleanup",
+        "description": "A space-themed game where players control a spaceship to collect and clean up space debris while avoiding obstacles and managing fuel levels.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/space-junk/index.html"
+        },
+        "author": {
+            "name": "user",
+            "github": "https://github.com/your-github-username"
+        }
+    },
     {
         "title": "Periodic Table",
         "description": "The periodic table that provides detailed information about each element, including atomic number, symbol, atomic mass, and electron configuration. Features search functionality and responsive design for easy access on all devices.",
@@ -2970,6 +3406,22 @@
             "github": "https://github.com/omkarhole"
         }
     },
+       {
+        "title": "Valentine Card",
+        "description": "A cute and interactive Valentine card with moving buttons and a heartfelt message. Features smooth animations and a responsive design to express your feelings in a fun way.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/valentine/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "Basket Ball Game",
         "description": "A 3D basketball shooting game built with Three.js and Cannon.js where players can aim and shoot basketballs into a hoop, keeping track of their score and time.",
@@ -3012,6 +3464,22 @@
         ],
         "links": {
             "live": "./projects/Unit-Converter/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
+     {
+        "title": "Digital Creatures playground",
+        "description": "A web application that allows users to create and interact with digital creatures in a virtual environment. Users can customize their creatures' appearance and behaviors, and observe how they interact with each other and their surroundings.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": {
+            "live": "./projects/digital-creatures/index.html"
         },
         "author": {
             "name": "Omkar",
